@@ -1,7 +1,8 @@
 import axios from "axios";
+const VITE_API_URL="https://point-of-sale-m2zd.vercel.app/"
 
 export const getBaseUrl = () => {
-  const url = import.meta.env.VITE_API_URL || "http://localhost:8000";
+  const url = VITE_API_URL || "http://localhost:8000";
   return url.replace(/\/+$/, "");
 };
 
